@@ -3,6 +3,7 @@
       this.rooms = Room.all;
 
       this.open = function() {
+        console.log("open called")
         $uibModal.open({
           templateUrl: "/templates/modal.html",
           controller: 'ModalCtrl',
