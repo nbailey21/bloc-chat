@@ -1,8 +1,23 @@
-<h1>Bloc Chat</h1>
-<div>
-  <button class="btn" ng-click="home.open()">New Room</button>
-</div>
-</div>
-<div ng-repeat="room in home.rooms">
-  <p>{{ room.name }}</p>
-</div>
+<section class="left-nav">
+  <div class="nav-content">
+    <h1>Bloc Chat</h1>
+    <div>
+      <button class="btn" ng-click="home.open()">New Room</button>
+    </div>
+    <div ng-repeat="room in home.rooms">
+      <p class="rooms-list" ng-click="home.chat(room)">{{ room.name }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="chatroom">
+  <div class="chat-content">
+    <h1 class="room-name">{{ home.currentRoom.name }}</h1>
+    <ul class="messages-container" ng-repeat="message in home.currentMessages">
+      <li>
+        <h4 class="user">{{ message.username }}</h4>
+        <p class="message">{{ message.content }}</p>
+      </li>
+    </ul>
+  </div>
+</section>

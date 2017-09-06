@@ -1,0 +1,34 @@
+.left-nav {
+  background-color: gray;
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+
+.nav-content {
+  padding-left: 15px;
+}
+
+.rooms-list {
+  margin-top: 10px;
+}
+
+.rooms-list:hover {
+  cursor: pointer;
+}
+
+.chatroom {
+}
+
+.chat-content {
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.room-name {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+}
