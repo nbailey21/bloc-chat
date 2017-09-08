@@ -15,7 +15,6 @@
         this.currentMessages = Message.getByRoomId(room.$id);
       }
 
-
     }
 
     angular
