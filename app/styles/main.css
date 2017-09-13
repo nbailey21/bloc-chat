@@ -1,7 +1,17 @@
+html {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
 .left-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   background-color: gray;
   width: 20%;
-  float: left;
   height: 100%;
 }
 
@@ -18,17 +28,31 @@
 }
 
 .chatroom {
+  position: fixed;
+  top: 0px;
+  left: 22%;
+  width: 75%;
+  height: 100%;
+  overflow: scroll;
 }
 
 .chat-content {
-  margin-left: 300px;
   margin-top: 20px;
 }
 
 .room-name {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
-ul {
-  list-style: none;
+.user {
+  font-weight: bold;
+}
+
+.send-message-bar {
+  position: fixed;
+  bottom: 20px;
+}
+
+.send-message-bar input {
+  width: 600px;
 }
